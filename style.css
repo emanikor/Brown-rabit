@@ -1,0 +1,151 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar{
+  /* margin-bottom: 30px; */
+
+}
+.navbar-nav.ml-auto {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-nav.ml-auto .search-social {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .navbar-nav.ml-auto .search-social .form-inline {
+    margin-right: 10px;
+  }
+  .navbar-nav.ml-auto .search-social .form-inline .form-control {
+    margin-right: 5px;
+  }
+
+  .navbar-brand img{
+    color: #ffffff;
+   
+    width: 300px;
+  }
+  
+  .navbar-brand {
+    color: #ffffff;
+   
+    width: 50%;
+  }
+  .navbar-toggler{
+    
+  }
+  .slideshow-container {
+ z-index:1;
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+   
+}
+
+.slideshow-container .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.slideshow-container .slide.active {
+  
+    opacity: 1;
+    z-index: 1;
+}
+
+.slideshow-container .slide img {
+  padding: 0 100px ;
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.slideshow-container .content-container {
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    left: 10%;
+    right: 30%;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px;
+    height: 170px;
+   
+    
+}
+
+.slideshow-container .navigation {
+
+    z-index: 1;
+    position: absolute;
+    top: 102%;
+
+    bottom: 20px;
+    right: 6.5%;
+}
+
+.slideshow-container .navigation button {
+    background-color: #ffffff;
+    font-size: 1.8rem;
+    color: #000000;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.slideshow-container .navigation .prev {
+    margin-right: 10px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.slideshow-container .content-container {
+   /* margin-right: 400px; */
+    max-width: 700px;
+  
+}
+.slideshow-container .content-container p {
+  padding: 40px;
+  font-size: 25px;
+ 
+}
+/*media query  */
+
+
+@media only screen and (max-width: 600px){
+  .slideshow-container .slide img {
+    padding: 0 10px ;
+  }
+  .slideshow-container .content-container {
+    padding: 10px;
+   height: 150px;
+   
+    
+}
+.slideshow-container .content-container p {
+  padding: 20px;
+  font-size: 16px;
+ 
+}
+.slideshow-container {
+ 
+  position: relative;
+  max-width: 100%;
+  height: 50vh;
+ 
+}
+}
