@@ -127,11 +127,11 @@
 
 
 @media only screen and (max-width: 600px){
-  .slideshow-container .slide img {
-    padding: 0 10px ;
-  }
+   .slideshow-container .slide img {
+    padding: 0 0px ;
+  } 
   .slideshow-container .content-container {
-    padding: 10px;
+    padding: 10px ;
    height: 150px;
    
     
